@@ -1,8 +1,15 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import SpiderSwingingBanner from '@/components/ui/SpiderSwingingBanner';
 import WebHanging from '@/components/ui/WebHanging';
 import SpiderCursor from '@/components/ui/SpiderCursor';  // ✅ Import cursor
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+});
 
 export const metadata: Metadata = {
   title: 'Tilasmi Subedi | Portfolio — Spider-Man Theme',
@@ -22,15 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <body className="antialiased web-pattern cursor-none">
         {/* ✅ Spider-Man Custom Cursor */}
         <SpiderCursor />

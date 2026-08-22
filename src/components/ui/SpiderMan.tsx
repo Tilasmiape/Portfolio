@@ -74,7 +74,8 @@ export default function SpiderMan({
 
       {/* Spider-Man PNG Image */}
       <motion.div
-        className={`absolute ${hanging ? `top-[${webLength}px]` : 'top-0'} left-0 w-full h-full`}
+        className="absolute left-0 w-full h-full"
+        style={{ top: hanging ? `${webLength}px` : 0 }}
         initial={hanging ? { y: -20, opacity: 0 } : { opacity: 0, scale: 0.8 }}
         animate={hanging ? { y: 0, opacity: 1 } : { opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}

@@ -17,14 +17,17 @@ export default function Hero() {
 
   useEffect(() => {
     // ✅ Generate random values only on the client side
-    const shots = Array.from({ length: 8 }, (_, i) => ({
-      tx: `${(Math.random() - 0.5) * 200}px`,
-      ty: `${(Math.random() - 0.5) * 200}px`,
-      left: `${20 + Math.random() * 60}%`,
-      top: `${20 + Math.random() * 60}%`,
-      delay: `${i * 0.5}s`,
-    }));
-    setWebShots(shots);
+    const frameId = requestAnimationFrame(() => {
+      const shots = Array.from({ length: 8 }, (_, i) => ({
+        tx: `${(Math.random() - 0.5) * 200}px`,
+        ty: `${(Math.random() - 0.5) * 200}px`,
+        left: `${20 + Math.random() * 60}%`,
+        top: `${20 + Math.random() * 60}%`,
+        delay: `${i * 0.5}s`,
+      }));
+      setWebShots(shots);
+    });
+    return () => cancelAnimationFrame(frameId);
   }, []);
 
   return (

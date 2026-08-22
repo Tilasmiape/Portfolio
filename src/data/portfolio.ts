@@ -1,12 +1,5 @@
 import {
-  Globe, Smartphone, Search, Database, Users, Code, Film, Calendar, Ticket, BarChart, 
-  BookOpen, Monitor, Server, Cloud, Video, Music, PenTool, Activity, PieChart, 
-  Layout, ShoppingBag, Award, TrendingUp, Mail, MapPin, Briefcase, GraduationCap,
-  ExternalLink, Github, FolderOpen, Send, Linkedin, Menu, X, ArrowDown,
-  // Additional icons for new projects
-  Library, Building, Clock, User, Film as FilmIcon, Theater, Armchair, 
-  TicketCheck, ChartBar, School, BookMarked, FileText, Table, Database as DatabaseIcon,
-  Cpu, BarChart3, LineChart, PieChart as PieChartIcon, AreaChart
+  Globe, Smartphone, Search, Database, Users, BarChart, Video, Cpu
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
