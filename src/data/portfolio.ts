@@ -50,14 +50,14 @@ export interface SkillCategory {
 
 export const personalInfo = {
   name: 'Tilasmi Subedi',
-  title: 'Computing Student | SEO Analyst Intern | Web Developer | Content Creator',
+  title: 'Computing Student | Motion Designer | SEO Analyst Intern | Web Developer',
   email: 'tilasmisubedi@gmail.com',
   phone: '+9779864428389',
   location: 'Pokhara, Nepal',
   linkedin: 'https://linkedin.com/in/tilasmi-subedi',
   github: 'https://github.com/Tilasmiape',
-  about: `I am a BSc (Hons) Computing student with an 8-month internship in SEO analysis, video editing, and YouTube content writing. I have hands-on experience building web applications using React, TypeScript, Next.js, and MongoDB, along with desktop development in C# and .NET MAUI. In addition, I have completed SQL coursework, an AI-based movie recommendation website, and smart data coursework. I am passionate about creating elegant digital solutions and constantly expanding my technical skillset.`,
-  heroIntro: `A passionate Computing student crafting modern web experiences and digital solutions. With hands-on experience in full-stack development, SEO analysis, and content creation, I bring ideas to life through clean code and creative thinking.`,
+  about: `I am a BSc (Hons) Computing student with an 8-month internship in SEO analysis, video editing, motion graphics, and YouTube content writing. I specialize in Motion Graphics, Kinetic Typography, and 3D Motion design using Adobe After Effects. I also have hands-on experience building web applications using React, TypeScript, Next.js, and MongoDB, along with desktop development in C# and .NET MAUI. In addition, I have completed SQL coursework, an AI-based movie recommendation website, and smart data coursework. I am passionate about creating elegant digital solutions and crafting engaging visual stories.`,
+  heroIntro: `A passionate Computing student & Motion Designer crafting modern web experiences and visual stories. With hands-on experience in Motion Graphics, Kinetic Typography, 3D Motion, full-stack development, and SEO analysis, I bring ideas to life through clean code and dynamic motion design.`,
 };
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
@@ -253,14 +253,19 @@ export const skillCategories: SkillCategory[] = [
     skills: ['React', 'TypeScript', 'Next.js', 'MongoDB', 'Tailwind CSS', 'Node.js'],
   },
   {
+    name: 'Motion & Video Editing',
+    icon: Video,
+    skills: ['Motion Graphics', 'Kinetic Typography', '3D Motion', 'Adobe After Effects', 'Video Editing', 'YouTube Content Writing'],
+  },
+  {
     name: 'Desktop / Mobile',
     icon: Smartphone,
     skills: ['C#', '.NET MAUI', 'Blazor Hybrid'],
   },
   {
-    name: 'SEO & Content',
+    name: 'SEO & Digital Marketing',
     icon: Search,
-    skills: ['SEO Analysis', 'Keyword Research', 'Video Editing', 'YouTube Content Writing'],
+    skills: ['SEO Analysis', 'Keyword Research', 'On-Page SEO', 'Competitor Analysis'],
   },
   {
     name: 'Data & Database',
