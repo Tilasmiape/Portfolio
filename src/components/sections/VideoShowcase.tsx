@@ -28,7 +28,7 @@ const videos: VideoItem[] = [
     id: 'news-edit',
     title: 'News Edit & Motion Graphics',
     type: 'local',
-    src: '/videos/News edit_scale_1x_prob-3.mp4',
+    src: '/videos/news-edit.mp4',
     badge: 'Motion Graphics & VFX',
     description: 'Dynamic news edit featuring kinetic typography, lower thirds, 3D camera tracking, and sound design created in Adobe After Effects.',
     coverGradient: 'from-red-950 via-slate-900 to-black',
@@ -132,6 +132,7 @@ export default function VideoShowcase() {
         video.muted = false;
         video.volume = 1.0;
         setDuration(video.duration);
+        video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
       };
 
       const handleTimeUpdate = () => {
