@@ -25,6 +25,18 @@ export interface VideoItem {
 
 const videos: VideoItem[] = [
   {
+    id: 'motion-graphics-showreel',
+    title: 'Motion Graphics Showreel',
+    type: 'local',
+    src: '/videos/calilio.mp4',
+    driveLink: 'https://drive.google.com/file/d/1gxGyNllCJT9lJkxOWCTP5uExVsejB1Wm/view?usp=drive_link',
+    badge: 'Motion Graphics Showreel',
+    description: 'A selection of motion graphics and visual storytelling work created for the showreel, featuring kinetic typography, 3D motion, and dynamic visual storytelling.',
+    coverGradient: 'from-violet-950 via-slate-900 to-black',
+    software: ['After Effects', 'Premiere Pro', 'Motion Design'],
+    durationStr: '0:11',
+  },
+  {
     id: 'news-edit',
     title: 'News Edit & Motion Graphics',
     type: 'local',
